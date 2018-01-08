@@ -11,7 +11,7 @@ configure_npm: yes
 configure_extra: yes
 configure_dock: yes
 
-dotfiles_repo: https://github.com/flemzord/dotfiles.git
+dotfiles_repo: https://github.com/Mathew78540/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/.dotfiles
 dotfiles_files:
@@ -26,9 +26,7 @@ homebrew_installed_packages:
   - autoconf
   - automake
   - bash-completion
-  - chromedriver
   - git
-  - go
   - gpg
   - node
   - yarn
@@ -36,14 +34,9 @@ homebrew_installed_packages:
   - ssh-copy-id
   - wget
   - curl
-  - htop
-  - kubernetes-cli
-  - kubernetes-helm
   - mas
   - ncdu
-  - packer
   - scw
-  - terraform
   - terminal-notifier
   - zsh
   - tree
@@ -55,47 +48,31 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  - homebrew/php
   - caskroom/fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - google-chrome
-  - sequel-pro
-  - google-cloud-sdk
-  - google-backup-and-sync
-  - atom
-  - alfred
+  - visual-studio-code
   - iterm2
   - spotify
-  - vagrant
-  - virtualbox
-  - dash
-  - cleanmymac
-  - etcher
-  - yakyak
-  - tunnelblick
-  - gitkraken
-  - intellij-idea
   - docker
+  - spectacle
+  - beardedspice
   - vlc
-  - istat-menus
-  - franz
+  - appcleaner
+  - dashlane
 
 npm_global_package:
-  - pm2
+  - spaceship-zsh-theme
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_signin_dialog: yes
 mas_installed_apps:
-  - { id: 747648890, name: "Telegram" }
-  - { id: 409183694, name: "Keynote" }
-  - { id: 918858936, name: "Airmail 3" }
-  - { id: 409203825, name: "Numbers" }
-  - { id: 409201541, name: "Pages" }
-  - { id: 557168941, name: "Tweetbot for Twitter" }
-  - { id: 715768417, name: "Microsoft Remote Desktop" }
+  - { id: 1091189122, name: "Bear" }
   - { id: 803453959, name: "Slack" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409183694, name: "Keynote" }
 
 mas_upgrade_all_apps: yes
 
@@ -111,7 +88,6 @@ dockitems_disabled:
   - Rappels
   - Maps
   - Photos
-  - Messages
   - FaceTime
   - iTunes
   - iBooks
@@ -125,51 +101,24 @@ dockitems_disabled:
   - Préférences Système
 
 dockitems_enabled:
-  - name: Airmail 3
-    path: "/Applications/Airmail 3.app"
-    pos: 1
-  - name: iTerm
-    path: "/Applications/iTerm.app"
-    pos: 2
   - name: Google Chrome
     path: "/Applications/Google Chrome.app"
+    pos: 1
+  - name: Messages
+    path: "/Applications/Messages.app"
+    pos: 2
+  - name: iTerm
+    path: "/Applications/iTerm.app"
     pos: 3
-  - name: Pages
-    path: "/Applications/Pages.app"
-    pos: 4
-  - name: Numbers
-    path: "/Applications/Numbers.app"
-    pos: 5
-  - name: Keynote
-    path: "/Applications/Keynote.app"
-    pos: 6
-  - name: Tweetbot
-    path: "/Applications/Tweetbot.app"
-    pos: 7
-  - name: Telegram
-    path: "/Applications/Telegram.app"
-    pos: 8
-  - name: YakYak
-    path: "/Applications/YakYak.app"
-    pos: 9
   - name: Slack
     path: "/Applications/Slack.app"
-    pos: 10
+    pos: 4
   - name: Spotify
     path: "/Applications/Spotify.app"
-    pos: 11
-  - name: Atom
-    path: "/Applications/Atom.app"
-    pos: 12
-  - name: GitKraken
-    path: "/Applications/GitKraken.app"
-    pos: 13
-  - name: Dash
-    path: "/Applications/Dash.app"
-    pos: 14
-  - name: Franz
-    path: "/Applications/Franz.app"
-    pos: 15
-  - name: Préférences Système
-    path: "/Applications/System Preferences.app"
-    pos: 16
+    pos: 5
+  - name: Bear
+    path: "/Applications/Bear.app"
+    pos: 6
+  - name: Visual Studio Code
+    path: "/Applications/Visual Studio Code.app"
+    pos: 7

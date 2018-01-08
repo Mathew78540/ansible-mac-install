@@ -19,7 +19,6 @@ dotfiles_files:
   - .gitconfig
   - .gitignore
   - .osx
-  - .vimrc
   - .zshrc.local
 
 homebrew_installed_packages:
